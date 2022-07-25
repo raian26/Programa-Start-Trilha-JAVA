@@ -1,0 +1,70 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 25 de jul. de 2022, 10:17:48
+    Author     : raian
+*/
+
+@font-face{
+    font-family: 'hello';
+    src:url('Hello.tff')format('truetype');
+}
+a:hover{
+    color:greenyellow;
+}
+a:visited{
+    color:purple;
+        cursor:alias;
+}
+a:active{
+    color:red;
+    cursor:help;
+}
+a{
+    color:buttonhighlight;
+    cursor:alias;
+}
+p.texto-vermelho{
+    text-transform: capitalize;
+}
+html{
+    color:#fff;
+    background-color:rgba(0,0,255,0.19);
+    
+}
+h2#titulo-segunda-aula{
+    text-decoration: underline;
+   letter-spacing:8px;
+}
+h1,h2,h3{
+    text-align: center;
+   
+}
+main p{
+    text-align: right; 
+    text-indent:1.5rem;
+}
+main{
+    font-family: cursive,serif;
+    background-color: #00ff00;
+    background-image: url("./download.jpg");
+}
+.titulo-aula{
+    background-color: #800000;
+}
+#titulo-primeira-aula{
+    font-family: inherit;
+    font-style:oblique;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+#titulo-segunda-aula{
+    font-family: hello, cursive;
+    font-style: italic;
+    font-weight: 800;
+        
+}
+
+        

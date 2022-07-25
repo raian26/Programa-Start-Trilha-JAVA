@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Funções</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            //Contar caracteres
+            var termo="Fora bolsonaro!";
+            alert(termo.length);
+            
+            //uppercase e lower
+            alert(termo.toUpperCase());
+            alert(termo.toLowerCase());
+            
+            //localizar elementos
+            //retornar a primeira letra O
+            alert(termo.indexOf("o"));
+            //retornar a ultima letra O
+            alert(termo.lastIndexOf("o"));
+            
+            // extrair elementos consecutivamente, nesse caso se colocar (5)irá tirar os caracteres que ocupam até o index 5
+            alert(termo.slice(6));
+            // tbm consigo extrair adiante dessa forma, vou deixar só FORA, no caso ele mostra o range entre os dois valores no index
+            alert(termo.slice(0,4));
+            
+            // arredondar 
+            var nota =7.77;
+            alert(Math.round(nota));
+            // min e max 
+            //obter menor valor
+            alert(Math.min(3,4,5,67,443));
+            alert(Math.max(-100,-23,-34));
+            
+            // mostrar numeros aleatorios(random) OBS: mesmo que não exista isso em computação kkk
+            alert(Math.ramdom()); //cria numeros de 0 a 1
+            
+            // criando funções
+            function somar(n1,n2){
+                return n1+n2;
+            }
+            //continuação
+            alert(somar(4,9));
+            
+        </script>
+    </head>
+    
+</html>

@@ -1,0 +1,38 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 25 de jul. de 2022, 14:54:54
+    Author     : raian
+*/
+body{
+    background-color:pink;
+}
+.box{
+    box-sizing: content-box;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    color:#fff;
+    font-size: 2rem;
+    padding: 5px;
+    border: 2px solid black;
+    margin: 5px;
+}
+.vermelho{
+    background-color: red;
+    border-width:5px;
+    border-top-style: double;
+    margin: 1px;
+}
+.azul{
+    background-color: blue;
+    border-width:1px 0px 10px 18px;
+    margin:3px;
+}
+.verde{ 
+    background-color: green;
+    border-bottom-width: 0;
+    border-style: dotted;
+}
