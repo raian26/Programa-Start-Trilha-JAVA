@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Seletores HTML</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script> 
+            function selecionar(){
+                var texto = document.getElementsByTagName("h1")[0];
+                alert(texto.innerHTML);
+            }
+            //seletor de classe
+            function exibirTexto(){
+                var campo = document.getElementsByClassName("texto")[2];
+                alert(campo.innerHTML);
+            }
+            //seletor de id
+            function exibirConteudo(){
+            var text = document.getElementById("text");
+        // todo o input utiliza o value    
+        alert(text.value);
+            }
+            
+           // manipulando o CSS com JS
+           function mudar(){
+               var text = document.getElementsByTagName("h1")[0];
+               //CSS
+               text.style.color="#0000FF";
+               text.style.fontSize="20px";
+        //alterar o conteudo       
+        text.innerHTML="Capgemini";
+        }
+        //atributo
+        function alterarLink(){
+            //obter o link
+            var link = document.getElementsByTagName("a")[0];
+            link.href="https://ge.globo.com/";
+            
+        }
+           
+             
+        </script>
+    </head>
+    <body>
+        <a href="https://globoesporte.com.br">Site GE</a>
+        <button onClick="alterarLink()">Alterar link</button>
+        <button onClick="exibirTexto()">Aqui</button>
+        <button onClick="selecionar()">Selecionar</button>
+        <h1 class="texto">Programa Start</h1>
+        <h1 class="texto">Seletores JS</h1>
+        <h1 class="texto">Trilha Start</h1>
+        <input type="text" id="text">
+        <button onClick="exibirConteudo()">Clique</button>
+        <button onClick="mudar()">Mudar</button>
+    </body>
+</html>

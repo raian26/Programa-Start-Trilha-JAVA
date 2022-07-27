@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Eventos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            //criar a função da mensagem do button
+            function mensagem(){
+                alert("Você clicou no botão");
+            }
+            // cria função para obter o curso selecionado utilizando o id do select
+            function escolher(){
+                var curso = document.getElementById("cursos").value;
+                //exibir o curso selecionado
+                alert(curso);
+            }
+            // evento de carregamento, evento exclusivo na tag body
+            function entrar(){
+                alert("Seja bem vindo!");
+            }
+            /* possui 3 eventos de teclado
+             * onKeyUp:Exibe o caractere e depois executa a ação.
+             * onKeyDown:executa a ação e depois exibe o caracter
+             * onKeyPress:executa a ação e depois exibe o caracter(não tem suporte as teclas: F1 ..F12, ALT,Ctrl etc
+             */
+            function exibir(){
+                var campo = document.getElementById("campo").value;
+                alert(campo);
+            }
+        </script>
+    </head>
+    <body onload="entrar()">
+        <input type="text" id="campo" onkeyup="exibir()">
+        <select onchange="escolher()" id="cursos">
+            <option>Escolha seu curso </option>
+            <option>HTML </option>
+            <option>CSS </option>
+            <option>JS </option>
+        </select>
+        <button onclick="mensagem()"> Clique aqui!</button>
+    </body>
+</html>

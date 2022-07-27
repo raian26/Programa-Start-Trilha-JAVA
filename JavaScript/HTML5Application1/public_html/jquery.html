@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>JQuery</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+            //import do jquery pelo cdn google
+        </script>
+        <!-- script -->
+        <script>
+            // ao carregar documento
+            $(document).ready(function(){
+                //variaveis
+                var campo = $("input").val();
+                var titulo= $("#titulo").html();
+                var subtitulo = $(".subtitulo").html();
+                
+                //exibir
+                alert(campo);
+                alert(titulo);
+                alert(subtitulo);
+                // evento de click
+                $("#click").click(function(){
+                    // adicionar um texto no h1
+                    $("h1").html("Você clicou no botão.");
+                });
+                //efeitos no jquery, exibir e ocultar conteudos
+                //ocultar
+                $("#ocultar").click(function(){
+                    $("img").hide();
+                });
+                //exibir
+                $("#exibir").click(function(){
+                    $("img").show();
+                });
+                //efeito FADE
+                //iniciando com h2 ocultado
+                $("h2").css("display","none");
+                //exibir h2
+                $("#exibirh2").click(function(){
+                    $("h2").fadeIn();
+                });
+                //ocultar h2
+                $("#ocultarh2").click(function(){
+                    $("h2").fadeOut(1000);
+                });
+                /*
+                 * tempo default 0,4s
+                 * slow 0,6s
+                 * valor trabalha em milisegundos voce pode colocar o valor
+                 */
+                
+            });
+        </script>
+    </head>
+    <body>
+        <input type="text" value="Campo Nome">
+        <h1 id="titulo">Titulo HTML</h1>
+        <h2 class="subtitulo">Subtitulo</h2>
+        <button id="click">Clique aqui</button>
+        <button id="exibir">Exibir</button>
+        <button id="ocultar">Ocultar</button>
+        <button id="exibirh2">ExibirH2</button>
+        <button id="ocultarh2">OcultarH2</button>
+        <br>
+        <img src="lula.png" alt="presidente lula fazendo coração"/>
+    </body>
+</html>

@@ -1,0 +1,6 @@
+<h2> Aprofundando os conhecimentos em template</h2>
+<p>Nome:{{ nome | uppercase}}</p>
+<p>Data de nascimento:{{dataNascimento | date:"dd/MM/yyyy"}}</p>
+<img [src]="urlImagem" width="300">
+<br>
+<button (click)="mostrarData()" type ="button">Mostrar data de nascimento</button>
