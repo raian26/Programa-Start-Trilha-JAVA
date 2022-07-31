@@ -11,17 +11,17 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         <!--JS-->
         <script> 
             //exibindo uma caixa de mensagem
-            window.alert("Aprendendo JS");
+            // window.alert("Aprendendo JS");
             
            //criando variaveis
        //   var nome="Raian";
-           var idade=29;
+           //var idade=29;
           // var altura=1.77;
            //var estuda=true;
            
            //Exibir os conteudos
            //window.alert(nome);
-           window.alert(idade);
+         //  window.alert(idade);
            //window.alert(altura);
            //window.alert(estuda);
            
@@ -32,12 +32,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
     //window.alert(5===4);
     
     //variaveis com condicionais
-   if(idade>=18){
-        alert("Maior de idade");
-    }
-        else{
-            alert("Menor de idade");
-        }
+   //if(idade>=18){
+       // alert("Maior de idade");
+    //}
+       // else{
+           // alert("Menor de idade");
+        //}
     // condicional aninhada trabalha com if, else if...
     // operador logico && e ||
     // tbm se aplica operadores logicos true e false e utiliza tbm o != para indicar que é diferente ou uma negação
@@ -47,12 +47,43 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
       //  alert("O valor é"+i);}
     
     //vetor de objetos
-    var cursos= [
-        {nome:"JS",carga:20, sala:1},
-        {nome:"CSS",carga:10, sala:2},
-        {nome:"HTML",carga:20, sala:3}];
+     // var cursos= [
+      //  {nome:"JS",carga:20, sala:1},
+       // {nome:"CSS",carga:10, sala:2},
+       // {nome:"HTML",carga:20, sala:3}];
    //exibir o vetor de objetos
-         alert(cursos[0].nome+" "+cursos[0].carga+" "+cursos[0].sala); 
+        // alert(cursos[0].nome+" "+cursos[0].carga+" "+cursos[0].sala); 
+
+         function primo(numero){
+  
+  //var resposta = document.getElementById('resposta');
+  var divisores=0;
+  var resultado;
+  var primo = "É um número primo";
+  var noPrimo= "Não é um número primo"
+
+  for(var count=2 ; count<numero ; count++){
+    resultado=primo;
+   if(numero % count == 0){
+   	resultado= noPrimo
+    break;
+   }
+  }
+  if(numero == 2){
+    resultado = primo
+    
+  	//resposta.innerHTML='É primo';
+   }
+  
+console.log(resultado);
+ 
+         }       
+		 
+        
+
         </script>
     </head>
+   <!-- <input id="n" type="number" /> <br/>
+   <button onclick="primo()">Testar</button><br/>
+   <div id="resposta"> -->
 </html>
