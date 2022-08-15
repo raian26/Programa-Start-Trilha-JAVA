@@ -9,8 +9,8 @@ itens:IProdutoCarrinho[] = [];
   constructor() { }
 
   obtemCarrinho(){
-    this.itens = JSON.parse(localStorage.getItem("carrinho") || "");
-    return this.itens;
+    return  JSON.parse(localStorage.getItem("carrinho") || "");
+    
   }
 
   adicionarAoCarrinho(produto:IProdutoCarrinho){

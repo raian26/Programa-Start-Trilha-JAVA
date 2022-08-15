@@ -22,7 +22,7 @@ quantidade =1;
 
   ngOnInit(): void {
     const routeParams = this.route.snapshot.paramMap;
-    const produtoId = Number(routeParams.get("id"))
+    const produtoId = Number(routeParams.get("id"));
     this.produto = this.produtosService.getOne(produtoId);
   }
 
